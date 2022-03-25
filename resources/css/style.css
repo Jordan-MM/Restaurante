@@ -243,7 +243,13 @@ html {
     color: var(--negro);
     display:grid;
     flex-direction: column;
+  }
 
+  .descrip{
+    text-align: center;
+    color: var(--blanco);
+    display:grid;
+    flex-direction: column;
   }
 
 
