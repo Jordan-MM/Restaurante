@@ -210,6 +210,7 @@ html {
     flex-shrink: 0;
     object-fit: contain;
     margin-right: 1.5em;
+    border-radius: 100%;
   }
   
   .carnes-menu-item-text {
