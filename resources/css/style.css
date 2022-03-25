@@ -238,6 +238,14 @@ html {
     }
   }
 
+  .mision{
+    text-align: center;
+    color: var(--negro);
+    display:grid;
+    flex-direction: column;
+
+  }
+
 
 
 
