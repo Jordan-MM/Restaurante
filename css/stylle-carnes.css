@@ -134,23 +134,23 @@ html {
     }
   }
 
-  .servicio{
+  .platillos{
     display: flex;
     flex-direction: column;
     align-items: center;
   }
   
-  .servicio h3{
+  .platillos h3{
     color: var(--secundario);
     font-weight: normal;
   }
 
-  .servicio p{
+  .platillos p{
     line-height: 2;
     text-align: center;
   }
 
-  .servicio .iconos {
+  .platillos .iconos {
     height: 15rem;
     width: 15rem;
     color: var(--blanco);
@@ -162,7 +162,7 @@ html {
     margin-bottom: 1rem;
   }
 
-  .mision{
+  .terminos{
     text-align: center;
     color: var(--negro);
     display:grid;
