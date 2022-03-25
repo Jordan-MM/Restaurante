@@ -176,6 +176,74 @@ html {
     flex-direction: column;
   }
 
+  .carnes-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1.5em;
+  }
+  
+  .carnes-menu {
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+  }
+  
+  .carnes-menu-group-heading {
+    margin: 0;
+    padding-bottom: 1em;
+    border-bottom: 2px solid #ccc;
+  }
+  
+  .carnes-menu-group {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5em;
+    padding: 1.5em 0;
+  }
+  
+  .carnes-menu-item {
+    display: flex;
+  }
+  
+  .carnes-menu-item-image {
+    width: 80px;
+    height: 80px;
+    flex-shrink: 0;
+    object-fit: contain;
+    margin-right: 1.5em;
+  }
+  
+  .carnes-menu-item-text {
+    flex-grow: 1;
+  }
+  
+  .carnes-menu-item-heading {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+  }
+  
+  .carnes-menu-item-name {
+    margin-right: 1.5em;
+  }
+  
+  .carnes-menu-item-description {
+    line-height: 1.6;
+  }
+  
+  @media screen and (min-width: 992px) {
+    .carnes-menu {
+      font-size: 16px;
+    }
+  
+    .carnes-menu-group {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    .carnes-menu-item-image {
+      width: 125px;
+      height: 125px;
+    }
+  }
 
 
 
