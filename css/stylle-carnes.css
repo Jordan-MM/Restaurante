@@ -8,9 +8,6 @@
     --grisclaro: #dfe9f3;
     --cafe:#e77427;
     --rojo:#961212;
-
-    
-
     /*Fuentes*/
 }
 
@@ -97,6 +94,7 @@ html {
     align-items: center;
     justify-content: center;
   }
+  
 
   .contenido-villa h1,
   .contenido-villa h2,
