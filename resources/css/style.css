@@ -6,11 +6,12 @@
     --secundario: #0097a7;
     --gris: #757575;
     --grisclaro: #dfe9f3;
+    --celeste: #3497c5;
 
-    /*Fuentes*/
+    
 }
 /* selecciona el elemento raíz de un árbol que representa el documento. */
-
+/* estructura base del html */
 html {
     box-sizing: border-box;
      font-size: 62.5%; /*cambiar el tamano de la fuente */
@@ -43,14 +44,14 @@ html {
   }
 
   .nav-bg{
-     background-color: var(--secundario) /*!important; */
+     background-color: var(--celeste) /*!important; */
   }
 
   .navegacion-principal a{
     color: var(--blanco);
     text-decoration: none;
     font-size: 2rem;
-    padding: 1rem;
+    padding: 2rem;
   }
 
   .navegacion-principal a:hover{
@@ -86,7 +87,7 @@ html {
     text-transform: uppercase;
     font-weight: 700;
     margin-bottom: 2rem;
-    color: var(--primario); 
+    color: var(--primario);
   }
 
   /* h1::before{
@@ -97,28 +98,40 @@ html {
   /* navegacion principal */
 
   .navegacion-principal{
-    display: flex; /*este elemento lo coloca en row */
+    display: flex; /*este elemento lo coloca en row o la barra de contenidos se cambia su direccion es opcional*/
     justify-content: space-evenly;
+    /* este da un espaciado para la barra */
   }
 
   .villa{
     background-image: url(../images/2.jpg);
     background-repeat: no-repeat;
+    /* paraque no se repita la imagen */
     background-size: cover;
+    /* definimos cuando cubre la imagen e este caso todo el contenedor */
     height: 45rem;
+    /* tamano de imagen*/
     position: relative;
+    /* la posicion */
     margin-bottom: 2rem;
+    /* para que no choque con las imagenes de abajo */
   }
 
   .contenido-villa{
     position: absolute;
+    /* definimos posicion */
     background-color: rgba(0,0,0,.3);
+    /* el color del fondo o la degradacion de la imagen */
     width: 100%;
+    /* el ancho */
     height: 100%;
+    /* la altura */
     display: flex;
     flex-direction: column;
     align-items: center;
+    /* aliniamos los items en el centro */
     justify-content: center;
+    /* centramos */
   }
 
   .contenido-villa h1,
@@ -127,61 +140,85 @@ html {
   p time,
   p a{
     color: var(--blanco);
+    /* tenemos un color y varias clase y tamano de letras o titulos */
   }
 
   .contenedor{
     max-width: 120rem;
+    /* colocamos el tamano maximo */
     margin: 0 auto;
+    /* el magin en el cual arriba y abajo 0 y iza y dere auto */
   }
 
   .sombra{
+    /* tenemos el sombriado de la pagina o el cuadro principal que contiene el contenido principal */
   -webkit-box-shadow: 0px 5px 15px 0px rgba(112, 112, 112, 0.54);
   -moz-box-shadow: 0px 5px 15px 0px rgba(112, 112, 112, 0.54);
   box-shadow: 0px 5px 15px 0px rgba(112, 112, 112, 0.5);
   padding: 2rem;
+  /* para que no este cerca del borde */
   border-radius: 1rem;
+  /* y el borde redondiado   */
   }
   /* cambiamos la direcion de flex box */
-   @media (max-width: 768px){ /*este menu de navegacion en formato orizontal */
+   @media (max-width: 768px){ /*este menu de navegacion en formato orizontal o tamano de la pantalla*/
     .navegacion-principal{
       flex-direction: column;
+      /* cambiamos la direccion  */
       text-align: center;
+      /* y centramos el texto  */
     }
   }
 
   @media(min-width:768px){
     .servicios{
       display: grid;
-      /* define tipos de visualizaciones */
+      /* define tipos de visualizaciones o distribucion */
       grid-template-columns: repeat(3, 1fr);
-      /* definimos el tamano de la linea */
+      /* definimos el tamano de la linea que seria 33 33 33  */
       column-gap: 1rem;
-      /* separcion de las columnas */
+      /* separcion de las columnas o elementos */
     }
   }
 
   .servicio{
+    /* esta seria para la parte del texto que acompana la imagen */
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  
+
   .servicio h3{
+    /* el titulo en el cual cambaimos el color  */
     color: var(--secundario);
     font-weight: normal;
+    /* cambiamos la letras */
   }
 
   .servicio p{
+    /* el parrafo */
     line-height: 2;
     text-align: center;
   }
 
   .servicio .iconos {
+    /* esta es para la parte de los iconos */
     height: 15rem;
     width: 15rem;
+    /* altura y ancho */
+    color: var(--blanco);
+    /* el color  */
+    background-color: var(--secundario);
+    /* el color de fondo */
+    border-radius: 50%;
+    /* para que se vea redondiado */
+  }
+
+  .servicio .imagenesiconos{
+    height: 15rem;
+    width: 25rem;
     color: var(--blanco);
     background-color: var(--secundario);
-    border-radius: 50%;
   }
 
   .campo{
