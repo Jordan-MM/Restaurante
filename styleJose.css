@@ -29,7 +29,7 @@ background: url(https://www.foodbusinessnews.net/ext/resources/FBN-Features/3/iT
 padding: 200px;
 text-align: center;
 
-background-size:100% 100%;
+background-size: 100% 100%;
 background-repeat: no-repeat;
  position: relative;
 }
@@ -121,5 +121,85 @@ footer.piePagina {
 }
 
 
+/* media queries */
+
+@media (max-width: 768px){ 
+  nav.ContenedorBarra 
+  {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px){ 
+  nav.ContenedorBarra a
+  {    
+      padding: 15px;
+      font-size: 15px;    
+  }
+}
+
+@media (max-width: 560px){ 
+  .contenedor
+  {
+  display: grid;
+  
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  gap: 20px;
+   
+  }
+}
+
+@media (max-width: 560px){ 
+  img 
+  {
+    width: 380px;
+    height: 300px;
+  }     
+}
+
+
+@media (max-width: 560px){ 
+  #fondo 
+  { 
+      padding: 100px;
+      text-align: center;
+
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      position: relative;
+  }     
+}
+
+
+@media (max-width: 560px){ 
+  #fondo h1  
+  { 
+    font-size: 40px;
+  }     
+}
+
+
+@media (max-width: 560px){ 
+  .iconos 
+  { 
+    height: 10px; 
+    width: 10px;
+  }     
+}
+
+@media (max-width: 560px){ 
+  .iconoSocial 
+  { 
+    height: 15px; 
+    width: 15px;
+  }     
+}
+
+
+
+
+  
 
 
