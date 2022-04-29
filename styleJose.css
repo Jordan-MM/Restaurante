@@ -197,6 +197,14 @@ footer.piePagina {
   }     
 }
 
+@media (max-width: 560px){ 
+  .button 
+  { 
+    width: 350px;
+  }     
+}
+
+
 
 
 
